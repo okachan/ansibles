@@ -1,6 +1,0 @@
-s3cmd: stable 1.5.2 (bottled), HEAD
-Command-line tool for the Amazon S3 service
-http://s3tools.org/s3cmd
-/usr/local/Cellar/s3cmd/1.5.2 (54 files, 840K) *
-  Poured from bottle
-From: https://github.com/Homebrew/homebrew/blob/master/Library/Formula/s3cmd.rb
