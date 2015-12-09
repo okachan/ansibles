@@ -1,0 +1,8 @@
+w3m: stable 0.5.3
+Pager/text based browser
+http://w3m.sourceforge.net/
+/usr/local/Cellar/w3m/0.5.3 (23 files, 1.7M) *
+  Built from source
+From: https://github.com/Homebrew/homebrew/blob/master/Library/Formula/w3m.rb
+==> Dependencies
+Required: bdw-gc ✔, openssl ✔

@@ -1,0 +1,8 @@
+socat: stable 1.7.3.0 (bottled), devel 2.0.0-b8
+netcat on steroids
+http://www.dest-unreach.org/socat/
+/usr/local/Cellar/socat/1.7.3.0 (8 files, 660K) *
+  Poured from bottle
+From: https://github.com/Homebrew/homebrew/blob/master/Library/Formula/socat.rb
+==> Dependencies
+Required: readline ✔, openssl ✔

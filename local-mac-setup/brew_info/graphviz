@@ -1,0 +1,29 @@
+graphviz: stable 2.38.0 (bottled), HEAD
+Graph visualization software from AT&T and Bell Labs
+http://graphviz.org/
+/usr/local/Cellar/graphviz/2.38.0 (469 files, 68M) *
+  Poured from bottle
+From: https://github.com/Homebrew/homebrew/blob/master/Library/Formula/graphviz.rb
+==> Dependencies
+Build: pkg-config ✔
+Required: libpng ✔
+Optional: pango ✘, gts ✘, librsvg ✘, freetype ✘
+==> Options
+--universal
+	Build a universal binary
+--with-app
+	Build GraphViz.app (requires full XCode install)
+--with-bindings
+	Build Perl/Python/Ruby/etc. bindings
+--with-freetype
+	Build with freetype support
+--with-gts
+	Build with GNU GTS support (required by prism)
+--with-librsvg
+	Build with librsvg support
+--with-pango
+	Build with Pango/Cairo for alternate PDF output
+--with-x11
+	Build with x11 support
+--HEAD
+	Install HEAD version
