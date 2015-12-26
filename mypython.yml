@@ -1,0 +1,38 @@
+---
+- hosts: test-servers
+
+  vars:
+    - anaconda_version: anaconda3-2.3.0
+
+  tasks:
+    - name: install basic pkg
+      apt: pkg={{item}}
+      sudo: yes
+      with_items:
+         - git
+         - gcc
+         - g++
+         - make
+         - openssl
+         - libssl-dev
+         - libbz2-dev
+         - libreadline-dev
+         - libsqlite3-dev
+         - libmecab-dev
+
+    - name: install pyenv
+      args:
+        creates: ~/.pyenv
+      shell: |
+         git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+         ## add pyenv env
+         (
+             echo 'export PYENV_ROOT=~/.pyenv'
+             echo 'export PATH=$PYENV_ROOT/bin:$PATH'
+             echo 'eval "$(pyenv init -)"'
+         ) >> ~/.bashrc
+         exec $SHELL
+         # install python
+         pyenv install "{{anaconda_version}}"
+         pyenv rehash
+         pyenv global "{{anaconda_version}}"
