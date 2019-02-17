@@ -1,0 +1,2 @@
+- local macのセットアップ用Ansible
+- python 機械学習、統計分析関係のライブラリセットアップ用ansible
